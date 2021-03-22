@@ -1,0 +1,44 @@
+main{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	text-align: center;
+}
+
+main h2{
+	width: 500px;
+	margin: 0 0 10px 450px;
+}
+
+.form{
+	text-align: left;
+	width: 500px;
+    margin: 0 auto;
+}
+
+.imguplo{
+	display: inline-block;
+    width: 150px;
+    margin-top: 20px;
+    height: 150px;
+	background-color: black;
+}
+
+.imguplo img{
+    width: 150px;
+    height: 150px;
+}
+  
+.form>input{
+	margin-bottom: 10px;
+	width: 68%;
+}
+
+
+.form>select{
+	margin-bottom: 10px;
+	width: 69%;
+}
+
+.form>input:first-child{
+	
+}

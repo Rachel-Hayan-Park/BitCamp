@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="BOARD">
+
+
+	<!-- 전체 게시글 수 조회 -->
+	<select id="totalCount" resultType="int">
+		SELECT COUNT(*)
+		FROM BOARD
+	</select>
+	
+ 
+	<select id="list" resultType="com.bc.model.vo.BoardVO" parameterType="Map">
+		SELECT *
+		  FROM (SELECT ROWNUM AS R_NUM, B.*
+		          FROM (SELECT *
+		                  FROM BOARD
+		                 ORDER BY B_NO DESC
+		               ) B 
+		       )
+		 WHERE R_NUM BETWEEN #{begin} AND #{end}
+	</select>
+	
+	
+  	<!-- 게시글 입력-->  
+	<insert id ="insert" parameterType="com.bc.model.vo.BoardVO">
+		INSERT INTO BOARD
+			(B_NO, WRITER_ID, B_CATEGORY, B_TITLE, B_CONTENTS,
+			 B_PASSWORD, B_STATUS, B_REGDATE, IMG_NAME, HIT)
+		VALUES (B_NO.NEXTVAL, #{id}, 'BC02', #{b_title}, #{b_contents}, #{b_password},
+				'BS01', sysdate, #{img_name}, 0} )	 
+	</insert>
+	
+	<!-- 게시글 하나 조회(B_NO 값으로) -->
+	<select id="one" parameterType="String" resultType="com.bc.model.vo.BoardVO">
+		SELECT B_NO, WRITER_ID, B_CATEGORY, B_TITLE, B_CONTENTS, B_PASSWORD, 
+		B_STATUS, B_REGDATE, B_ANSWER, ANSWER_DATE
+		FROM BOARD
+		WHERE B_NO = #{b_no}
+	</select>
+
+
+
+	
+	
+	
+</mapper>
+
+
+
+
