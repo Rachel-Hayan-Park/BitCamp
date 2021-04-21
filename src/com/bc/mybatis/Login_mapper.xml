@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member">
+	
+	<!-- 회원가입 -->
+	<insert id="joinInsert" parameterType ="com.bc.model.vo.MemberVO">
+		INSERT INTO MEMBER(ID, PASSWORD, NAME, YEAR, MONTH, DAY, PHONNUM, LOCATION, EMAIL, JOINDATE, PROFILE_IMG)
+		VALUES (#{id}, #{password}, #{name}, #{year}, #{month}, #{day}, #{phonnum}, #{location}, #{email}, TO_CHAR(SYSDATE, 'YYYY-MM-DD'), #{profile_img})	
+	</insert>
+	
+	<!-- 아이디찾기 -->
+	<select id="findId" parameterType="Map" resultType=
+	"com.bc.model.vo.MemberVO">
+		SELECT * FROM MEMBER
+		WHERE NAME = #{name}
+		AND PHONNUM = #{phonnum}
+	</select>
+	
+	<!-- 비밀번호찾기 -->
+	<select id="findPwd" parameterType="Map" resultType="com.bc.model.vo.MemberVO">
+		SELECT * FROM MEMBER
+		WHERE ID = #{id}
+		AND EMAIL = #{email}
+	</select>
+	
+	<!-- 로그인하기 -->
+	<select id="login" parameterType="Map" resultType="com.bc.model.vo.MemberVO">
+		SELECT ID, PASSWORD, NAME, YEAR, MONTH, DAY
+		, PHONNUM, LOCATION, EMAIL, PROFILE_IMG, C.COMMON_NAME
+		FROM MEMBER M INNER JOIN COMMON C
+            ON M.LOCATION = c.common_code
+		WHERE ID = #{id}
+		AND PASSWORD = #{password}
+	</select>
+	
+	<!-- 회원가입 시 아이디 중복체크 -->
+	<select id="idCheck" parameterType="String" resultType="int">
+		SELECT NVL(count(*), 0)  FROM MEMBER
+		WHERE ID = #{id}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+

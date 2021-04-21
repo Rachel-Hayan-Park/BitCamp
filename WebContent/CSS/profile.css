@@ -1,0 +1,53 @@
+main{
+	 margin-top: 50px;
+     width : 100%;
+     height : 600px;
+     padding-left: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 60px;
+     position : relative;
+}
+
+.txt{
+	position : absolute;
+	display: inline-block;
+    left: 660px;
+    text-align: center;
+}
+
+table tr td{
+	padding: 2px;
+}
+
+table b{
+	color : #82B57F;
+}
+
+.profile{
+	position: absolute;
+    left: 420px;
+    top: 50px;
+}
+
+.profile{
+	position: absolute;
+    left: 420px;
+    top: 50px;
+}
+
+.profile input{
+	border : 0;
+}
+
+.profile input[type=button]{
+	padding: 5px;
+    width: 49%;
+    margin-right: 5px;
+    margin-top: 10px;
+}
+.profile input[type=reset]{
+	padding: 5px;
+    width: 49%;
+    margin-top: 10px;
+}

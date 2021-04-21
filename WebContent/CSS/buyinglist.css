@@ -1,0 +1,82 @@
+main {
+ 	 margin-top: 70px;
+     width : 100%;
+     padding-left: 10px;
+     display: flex;
+     flex-wrap: wrap;
+     margin-bottom: 60px;
+ }
+ 
+#purchase{
+	float : right;
+ 	width: 800px;
+ 	text-align: center;
+}
+#purchase h1{
+	margin : 20px 0 20px 300px;
+}
+
+#purchase ul{
+	width: 600px;
+	margin: 30px;
+}
+
+#purchase>ul{
+	position : relative;
+}
+
+#purchase>ul>ul{
+	 position : absolute;
+	 top: 50px;
+     left: 500px;
+     text-align: left;
+}
+
+#purchase>ul>ul>li{
+	padding-bottom: 20px;
+}
+
+#purchase>ul>ul>li:first-child{
+	 font-weight: bold;
+	 font-size: 22px;
+}
+
+#purchase>ul>ul>li:nth-child(2), :nth-child(3){
+	 font-size: 20px;
+}
+
+.btnWraper{
+    width: 900px;
+    margin-left: 200px;
+}
+
+.btnWraper>a{
+	color : inherit;
+	font-size: 20px;
+	padding: 20px;
+    margin-right: 150px;
+    width: 100px;
+    height: 40px;
+    background-color: #82B57F;
+    border-radius: 200px;
+    text-align: center;
+    color: #FAFCEE;
+    line-height: 40px;
+    opacity: 0.6;
+}
+
+.btnWraper>a:hover{
+	font-weight: bold;
+	opacity: 1;
+}
+
+.notbtn{
+	ackground-color: #FAFCEE;
+}
+ 
+ .selected{
+ 	font-weight : bold;
+ }
+ .active{
+ 	color : red;
+ }

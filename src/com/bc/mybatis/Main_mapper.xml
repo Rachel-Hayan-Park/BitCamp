@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="main">
+	<!-- 메인페이지 상품 리스트 조회  -->
+	<select id="searchList" parameterType="map" resultType="com.bc.model.vo.PListVO">
+		<choose>
+			<when test="idx==0">
+				SELECT P_NO, P_STATUS, P_TITLE as P_TITLE, PRICE as PRICE, PICTURE01 as PICTURE01, COMMON_NAME AS COMMON_NAME, LOCATION
+				FROM(SELECT ROWNUM AS R_NUM, P.*
+				    FROM(SELECT * 
+				            FROM P_LIST P INNER JOIN COMMON C
+				            ON P.LOCATION = C.COMMON_CODE
+				            WHERE P_TITLE LIKE '%'||#{str}||'%'
+				            ORDER BY P_NO DESC
+				    ) P
+				)
+				WHERE R_NUM BETWEEN #{begin} AND #{end}
+			</when>
+			<when test="idx==1">
+				SELECT P_NO, P_STATUS, P_TITLE as P_TITLE, PRICE as PRICE, PICTURE01 as PICTURE01, COMMON_NAME AS COMMON_NAME, LOCATION
+				    FROM(SELECT ROWNUM AS R_NUM, P.*
+				        FROM(SELECT * 
+				                FROM P_LIST P INNER JOIN COMMON C
+				                ON P.LOCATION = C.COMMON_CODE
+				                WHERE C.COMMON_NAME = #{str}
+				                ORDER BY P_NO DESC
+				        ) P
+				    )
+				WHERE R_NUM BETWEEN #{begin} AND #{end}
+			</when>
+			<when test="idx==2">
+				SELECT P_NO, P_STATUS, P_TITLE as P_TITLE, PRICE as PRICE, PICTURE01 as PICTURE01, COMMON_NAME AS COMMON_NAME
+				    FROM(SELECT ROWNUM AS R_NUM, P.*
+				        FROM(SELECT * 
+				                FROM P_LIST P INNER JOIN COMMON C
+				                ON P.P_CATEGORY = C.COMMON_CODE
+				                WHERE C.COMMON_NAME = #{str}
+				                ORDER BY P_NO DESC
+				        ) P
+				    )
+				WHERE R_NUM BETWEEN #{begin} AND #{end}
+			</when>
+			<otherwise>
+				SELECT P_NO, P_STATUS, P_TITLE as P_TITLE, PRICE as PRICE, PICTURE01 as PICTURE01, COMMON_NAME AS COMMON_NAME
+				FROM(SELECT ROWNUM AS R_NUM, P.*
+				    FROM(SELECT * 
+				            FROM P_LIST P INNER JOIN COMMON C
+				            ON P.LOCATION = C.COMMON_CODE
+				            ORDER BY P_NO DESC
+				    ) P
+				)
+				WHERE R_NUM BETWEEN #{begin} AND #{end}
+			</otherwise>
+		</choose>
+	</select>
+	
+	<!-- 메인페이지 상품 리스트 조회 -->
+	<select id="searchCount" parameterType="map" resultType="Integer">
+		<choose>
+			<when test="idx==0">
+				SELECT COUNT(*) FROM P_LIST
+				WHERE P_TITLE LIKE '%'||#{str}||'%'
+			</when>
+			<when test="idx==1">
+				SELECT COUNT(*)
+			    FROM P_LIST P INNER JOIN COMMON C
+			    ON p.location = c.common_code
+				WHERE C.COMMON_NAME = #{str}
+			</when>
+			<when test="idx==2">
+				SELECT COUNT(*)
+			    FROM P_LIST P INNER JOIN COMMON C
+			    ON P.P_CATEGORY = C.COMMON_CODE
+				WHERE C.COMMON_NAME = #{str}
+			</when>
+			<otherwise>
+				SELECT COUNT(*) FROM P_LIST
+			</otherwise>
+		</choose>
+	</select>
+</mapper>
+
+
+
+
+
+

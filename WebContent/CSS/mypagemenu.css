@@ -1,0 +1,27 @@
+ .mypageMenu{
+ 	float : left;
+ 	width : 400px;
+ 	height: 600px;
+ 	background-color: #FAFCEE;
+ }
+ 
+ .mypageMenu>h1{
+ 	margin : 40px 0;
+    text-align : center;
+ }
+ 
+ .mypageMenu>ul>li{
+  	text-align : center;
+    font-size: 25px;
+    /* background-color: #82B57F; */
+    padding: 30px;
+ }
+ 
+ .mypageMenu>ul>li a{
+  	color : inherit;
+ }
+ 
+ .mypageMenu>ul>li:hover{
+    background-color: #82B57F;
+    color : white;
+ }

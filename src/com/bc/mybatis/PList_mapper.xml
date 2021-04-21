@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="PList">
+	<insert id="insert" parameterType ="com.bc.model.vo.PListVO">
+		INSERT INTO P_LIST(P_NO, SALE_ID, PICTURE01, PRICE, P_TITLE, P_CONTENTS, P_STATUS,  P_CATEGORY, LOCATION, P_REGDATE, PICTURE02)
+		VALUES (P_SEQUENCE.NEXTVAL, #{sale_id} , #{picture01}, #{price}, #{p_title}, #{p_contents}, 'PS01',  #{p_category}, #{location}, TO_CHAR(SYSDATE, 'YYYY-MM-DD'), #{picture02})	
+	</insert>
+	
+	<select id="selecProduct" parameterType="Integer" resultType="com.bc.model.vo.PListVO">
+		SELECT P_NO, SALE_ID, PICTURE01, PRICE, P_TITLE, P_CONTENTS, P_STATUS, P_CATEGORY, LOCATION, P_REGDATE, PICTURE02
+		FROM P_LIST
+		WHERE P_NO = #{p_no}
+	</select>
+	
+	<!-- 상품 상세리스트 - 상품 구매하기 버튼 클릭 시 -->
+	<update id="updateBuying" parameterType="com.bc.model.vo.PListVO">
+		UPDATE P_LIST
+		SET P_STATUS = 'PS03', PURCHASE_ID = #{purchase_id}
+		WHERE P_NO = #{p_no}
+	</update>
+	
+</mapper>

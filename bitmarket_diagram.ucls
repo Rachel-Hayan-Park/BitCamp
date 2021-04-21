@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" always-add-relationships="false" generalizations="true" realizations="true" 
+  associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="com.bc.model.command.ChangeStatusToSellingCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ChangeStatusToSellingCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="261" x="4347" y="269"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="com.bc.model.command.DeletePlistCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/DeletePlistCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="177" x="4614" y="269"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="com.bc.model.command.ViewCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ViewCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="152" x="4797" y="270"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="com.bc.model.command.ReviewWriteOkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ReviewWriteOkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="204" x="4956" y="272"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="5" language="java" name="com.bc.model.command.PListCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/PListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="152" x="5165" y="272"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="6" language="java" name="com.bc.model.command.BuyingOkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/BuyingOkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="168" x="5321" y="273"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="7" language="java" name="com.bc.model.command.PLCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/PLCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="108" width="152" x="5495" y="272"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="8" language="java" name="com.bc.model.command.FindId_OkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/FindId_OkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="171" x="4669" y="115"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="9" language="java" name="com.bc.model.command.LoginMainCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/LoginMainCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="173" x="4846" y="115"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="10" language="java" name="com.bc.model.command.ExitMemberOkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ExitMemberOkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="113" width="199" x="5025" y="116"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="11" language="java" name="com.bc.model.command.JoinCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/JoinCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="152" x="5230" y="115"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="12" language="java" name="com.bc.model.command.FindPwdCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/FindPwdCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="160" x="5387" y="116"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="com.bc.model.command.CheckPasswordCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/CheckPasswordCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="208" x="5553" y="117"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="14" language="java" name="com.bc.model.command.LogoutCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/LogoutCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="152" x="5767" y="116"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="15" language="java" name="com.bc.model.command.UpdateProFile_OkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/UpdateProFile_OkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="114" width="224" x="5925" y="118"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="16" language="java" name="com.bc.model.command.MainCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/MainCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="152" x="6155" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="17" language="java" name="com.bc.model.command.ReviewWriteCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ReviewWriteCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="184" x="6315" y="122"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="18" language="java" name="com.bc.model.command.ReviewCheckCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ReviewCheckCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="192" x="6506" y="122"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="19" language="java" name="com.bc.model.command.UpdatePriseCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/UpdatePriseCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="182" x="6704" y="121"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="20" language="java" name="com.bc.model.command.BuyingListCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/BuyingListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="174" x="6893" y="121"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="21" language="java" name="com.bc.model.command.UpdateProfileCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/UpdateProfileCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="192" x="7071" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="22" language="java" name="com.bc.model.command.JoinCheckCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/JoinCheckCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="174" x="7268" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="23" language="java" name="com.bc.model.command.MyPageMainCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/MyPageMainCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="184" x="7447" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="24" language="java" name="com.bc.model.command.ChangeStatusToSoldCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ChangeStatusToSoldCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="244" x="7636" y="121"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="25" language="java" name="com.bc.model.command.InProgressListCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/InProgressListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="198" x="7885" y="121"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="26" language="java" name="com.bc.model.command.Command" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/Command.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6301" y="52"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <class id="27" language="java" name="com.bc.model.command.CheckPasswordOkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/CheckPasswordOkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="228" x="8089" y="120"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="28" language="java" name="com.bc.model.command.FindPwd_OkCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/FindPwd_OkCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="183" x="6744" y="286"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="29" language="java" name="com.bc.model.command.ExitMemberCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/ExitMemberCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="179" x="6932" y="285"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="30" language="java" name="com.bc.model.command.SoldListCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/SoldListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="157" x="7116" y="285"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="31" language="java" name="com.bc.model.command.UpdatePriseGOCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/UpdatePriseGOCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="206" x="7277" y="286"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="32" language="java" name="com.bc.model.command.FindIdCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/FindIdCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="152" x="7489" y="286"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="33" language="java" name="com.bc.model.command.SellingListCommand" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/command/SellingListCommand.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="110" width="174" x="7647" y="286"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="34" language="java" name="com.bc.model.vo.CommonVO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/vo/CommonVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="102" width="132" x="4717" y="434"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="35" language="java" name="com.bc.model.vo.PListVO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/vo/PListVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="300" width="204" x="5043" y="434"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="36" language="java" name="com.bc.model.vo.ReviewVO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/vo/ReviewVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="156" width="190" x="5463" y="435"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="37" language="java" name="com.bc.model.vo.MemberVO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/vo/MemberVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="281" width="201" x="5255" y="435"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="38" language="java" name="com.bc.controller.PListController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/PListController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="169" x="6042" y="309"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="39" language="java" name="com.bc.controller.IndexController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/IndexController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="79" width="163" x="6219" y="308"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="40" language="java" name="com.bc.controller.MainController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/MainController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="169" x="6390" y="307"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="41" language="java" name="com.bc.controller.MyPageController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/MyPageController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="169" x="6042" y="418"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="42" language="java" name="com.bc.controller.LoginController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/LoginController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="169" x="6216" y="418"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="43" language="java" name="com.bc.controller.CSController" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/controller/CSController.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="97" width="169" x="6392" y="418"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="44" language="java" name="com.bc.mybatis.DBService" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/mybatis/DBService.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="6851" y="576"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <package id="45" language="java" name="com.bc.mybatis" project="BITCAMP" file="/BITCAMP/src/com/bc/mybatis" 
+    binary="false" corner="BOTTOM_RIGHT">    
+    <position height="55" width="187" x="6747" y="453"/>    
+    <display autosize="false" stereotype="true" sort-features="false" accessors="true"/>  
+  </package>  
+  <class id="46" language="java" name="com.bc.model.UpdateDAO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/UpdateDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="205" width="248" x="7016" y="455"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="47" language="java" name="com.bc.model.DeleteDAO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/DeleteDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="126" width="168" x="7273" y="455"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="48" language="java" name="com.bc.model.SelectDAO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/SelectDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="287" width="258" x="7450" y="457"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="49" language="java" name="com.bc.model.CreateDAO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/CreateDAO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="7806" y="538"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="50" language="java" name="com.bc.model.vo.BoardVO" project="BITCAMP" 
+    file="/BITCAMP/src/com/bc/model/vo/BoardVO.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="102" width="178" x="4856" y="434"/>    
+    <display autosize="false" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <realization id="51">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="52">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="53">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="54">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="55">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="56">    
+    <end type="SOURCE" refId="7"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="57">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="58">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="59">    
+    <end type="SOURCE" refId="6"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="60">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="61">    
+    <end type="SOURCE" refId="9"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="62">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="63">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="64">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="65">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="66">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="67">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="68">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="69">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="70">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="71">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="72">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="73">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="74">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="75">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="76">    
+    <end type="SOURCE" refId="13"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="77">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="78">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="79">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="80">    
+    <end type="SOURCE" refId="14"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="81">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <realization id="82">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="26"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="true" protected="true" private="true" static="true"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

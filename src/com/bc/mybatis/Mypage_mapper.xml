@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="mypage">
+
+	<!-- 마이페이지 - 지역명 불러오기 -->
+	<select id="mypageLocation" parameterType="Map" resultType="com.bc.model.vo.MemberVO">
+		SELECT M.ID, M.PASSWORD, M.NAME, M.YEAR, M.MONTH, M.DAY, M.PHONNUM, M.LOCATION
+				, M.EMAIL, M.JOINDATE, M.PROFILE_IMG, C.COMMON_NAME
+						FROM MEMBER M, COMMON C
+						WHERE M.LOCATION = C.COMMON_CODE
+		AND M.ID = #{id}
+		AND M.LOCATION = #{location}
+	</select>
+	
+	<update id="updateProfile" parameterType="com.bc.model.vo.MemberVO">
+		UPDATE MEMBER
+		SET PASSWORD = #{password}, LOCATION = #{location}, PHONNUM = #{phonnum}, EMAIL = #{email}, PROFILE_IMG = #{profile_img}
+		WHERE ID = #{id}
+	</update>
+	
+	<!-- 마이페이지 - 이번 달 판매 개수 불러오기 -->
+	<select id="checkSoldList" parameterType="String" resultType="int">
+		SELECT COUNT(*)
+		FROM P_LIST p, MEMBER m
+		WHERE m.ID = p.SALE_ID
+		AND p.SELLING_DATE BETWEEN TRUNC(sysdate,'MM') AND LAST_DAY(sysdate)
+		AND p.SALE_ID = #{id}
+		AND p.P_STATUS = 'PS02'
+	</select>
+	
+	
+	<!-- 프로필 수정 후 프로필정보 -->
+	<select id="finalProfile" parameterType="String" resultType="com.bc.model.vo.MemberVO">
+		SELECT m.ID, m.PASSWORD, m.NAME, m.YEAR, m.MONTH, m.DAY, m.PHONNUM, m.LOCATION
+				, m.EMAIL, m.JOINDATE, m.PROFILE_IMG, c.COMMON_NAME
+						FROM MEMBER m, COMMON c
+						WHERE m.LOCATION = c.COMMON_CODE
+		AND m.ID = #{id}
+	</select>
+	
+	<!-- 마이페이지 - 판매내역 -->
+	<select id="sellingP_list" parameterType="String" resultType="com.bc.model.vo.PListVO">
+		SELECT p.P_NO, p.PURCHASE_ID, p.PICTURE01, p.PRICE, p.P_TITLE, p.P_REGDATE, c.COMMON_NAME
+		FROM MEMBER m, P_LIST p, COMMON c
+		WHERE m.ID = p.SALE_ID
+        AND p.P_STATUS = c.COMMON_CODE
+		AND p.SALE_ID = #{sale_id}
+		AND p.P_STATUS = #{p_status}
+	</select>
+	
+	<!-- 판매내역(거래중/거래진행중 ->거래완료) 상태 변경 시 review 테이블에 값 설정 -->
+		<insert id="insertReview" parameterType="com.bc.model.vo.ReviewVO">
+			INSERT INTO REVIEW (P_NO, PURCHASE_ID, R_STATUS)
+			VALUES(#{p_no}, #{purchase_id}, #{r_status})		
+		</insert>
+	
+	
+	<!-- 마이페이지 - 판매내역 - 거래진행중-> 거래완료로 변경 -->
+	<update id="changeStatusToSold" parameterType="com.bc.model.vo.PListVO">
+		UPDATE P_LIST 
+		SET P_STATUS = #{p_status}, SELLING_DATE = SYSDATE
+		WHERE P_NO = #{p_no}
+	</update>
+	
+	<!-- 마이페이지 - 판매내역 - 거래완료 -> 거래중으로 변경 -->
+	<update id="changeStatusToSelling" parameterType="com.bc.model.vo.PListVO">
+		UPDATE P_LIST 
+		SET P_STATUS = #{p_status}, SELLING_DATE = null
+		WHERE P_NO = #{p_no}
+	</update>
+	
+
+	<!-- 마이페이지 - 판매내역 - 판매중 -> 삭제처리 -->
+	<delete id="deleteP_list" parameterType="String">
+		DELETE FROM P_LIST
+		WHERE P_NO = #{p_no}
+	</delete>
+
+	<!-- 마이페이지 - 회원탈퇴 -->
+	<delete id="deleteMember" parameterType="String">
+		{call
+			declare
+			begin
+				DELETE FROM MEMBER		
+				WHERE ID = #{id};
+				
+				DELETE FROM P_LIST
+				WHERE SALE_ID = #{id};
+			end
+		}
+	</delete>
+	
+	<!-- 마이페이지 - 구매후기 -->
+	<select id="checkReview" parameterType="String" resultType="com.bc.model.vo.ReviewVO">
+		SELECT r.P_NO, r.PURCHASE_ID, r.R_CONTENT, r.R_REGDATE
+		FROM P_LIST p, REVIEW r
+		WHERE p.P_NO = r.P_NO
+		AND r.R_CONTENT IS NOT NULL
+		AND p.SALE_ID = #{id}
+	</select>
+	
+</mapper>
+
+
+
+
+
+
+
+
+
